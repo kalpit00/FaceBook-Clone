@@ -8,6 +8,7 @@ public class FacebookCloneServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(FacebookCloneServiceApplication.class, args);
+        System.out.println();
     }
 
 }
