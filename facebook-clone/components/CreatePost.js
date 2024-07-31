@@ -6,7 +6,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { useSession } from "next-auth/react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import axios from "axios";
-import { addPost, selectPost } from "../public/src/features/postSlice";
+import { addPost, selectPost } from "../public/features/postSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const CreatePost = () => {
