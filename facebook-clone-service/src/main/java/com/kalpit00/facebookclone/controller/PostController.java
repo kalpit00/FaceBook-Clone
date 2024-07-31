@@ -5,6 +5,7 @@ import com.kalpit00.facebookclone.service.PostService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 @CrossOrigin(value = "http://localhost:3000")
@@ -37,5 +38,9 @@ public class PostController {
                 .build();
         post = postService.addPost(post);
         return post;
+    }
+    @GetMapping
+    public List<Post> getPost() {
+        return postService.getPost();
     }
 }
