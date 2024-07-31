@@ -5,6 +5,7 @@ import { AiOutlineShop } from "react-icons/ai";
 import { MdOutlineOndemandVideo, MdOutlineExpandMore } from "react-icons/md";
 import { BsStopwatch } from "react-icons/bs";
 import Image from "next/image";
+import Sidebaritem from "./SidebarItem";
 
 const Sidebar = () => {
   return (
@@ -18,6 +19,12 @@ const Sidebar = () => {
         />
         <p className="hidden sm:inline-flex font-medium">{}</p>
       </div>
+      <Sidebaritem Icon={ImUsers} value="Friends" />
+      <Sidebaritem Icon={MdGroups} value="Groups" />
+      <Sidebaritem Icon={AiOutlineShop} value="MarketPlace" />
+      <Sidebaritem Icon={MdOutlineOndemandVideo} value="Watch" />
+      <Sidebaritem Icon={BsStopwatch} value="Memeries" />
+      <Sidebaritem Icon={MdOutlineExpandMore} value="See more" />
     </div>
   );
 };
